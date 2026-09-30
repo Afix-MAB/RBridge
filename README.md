@@ -6,7 +6,7 @@ RemoteBridge serà un servei de control remot per a xarxes que funcionen amb [CG
 
 El servei està pensat per poder tenir un accés remot segur per a un tècnic informàtic, que dona servei a petits negocis que tinguin una IP pública compartida. Es pensa tenir un servidor cloud (VPS), que fa de punt de connexió, i una passarel·la a casa del client. S'utilitzarà [WireGuard](https://www.wireguard.com/) per a la connexió.
 
-El tècnic podrà accedir al dispositiu des d'una web, sense que el client hagi d'obrir ports o configurar qualsevol protocol. Cada usuari tindrà una Raspberry Pi per poder executar aquesta connexió.
+El tècnic podrà accedir al dispositiu des d'una web, sense que el client hagi d'obrir ports o configurar qualsevol protocol. Cada usuari tindrà una Raspberry Pi per poder tenir aquesta connexió.
 
 ## Problemes
 
@@ -20,4 +20,4 @@ Dissenyar i desplegar un sistema que ens deixi accedir de forma segura a les xar
 
 ## Contingut
 
-El projecte incorpora un VPS, 3 clients i un portal web amb un formulari de seleccions. També hi haurà una web per poder demanar els serveis del tècnic i una base de dades dels dispositius dels clients.k
+El projecte incorpora un VPS, 3 clients i un portal web amb un formulari de seleccions. També hi haurà una web per poder demanar els serveis del tècnic i una base de dades dels dispositius dels clients.
