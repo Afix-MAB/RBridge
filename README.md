@@ -21,4 +21,4 @@ Dissenyar i desplegar un sistema que ens deixi accedir de forma segura a les xar
 
 ## Contingut
 
-El projecte incorpora un VPS, 3 clients i un portal web amb un formulari de seleccions. També hi haurà una web per poder demanar els serveis del tècnic i una base de dades dels dispositius dels clients.
+El projecte incorpora un VPS, 3 clients, 3 dispositius Raspberry, i un portal web amb un formulari de seleccions. També hi haurà una web per poder demanar els serveis del tècnic i una base de dades dels dispositius dels clients.
