@@ -9,6 +9,8 @@ El servei està pensat per poder tenir un accés remot segur per a un tècnic in
 
 El tècnic podrà accedir al dispositiu des d'una web, sense que el client hagi d'obrir ports o configurar qualsevol protocol. Cada usuari tindrà una Raspberry Pi per poder tenir aquesta connexió.
 
+Es podrà accedir directament al hardware gràcies al servei, possiblement es possará en práctica.
+
 ## Problemes
 
 Hi ha la possibilitat que un grup d'empreses en un edifici estiguin darrere d'una CG-NAT, ja que alguns [operadors](https://www.redeszone.net/tutoriales/redes-cable/operadores-usan-cg-nat-internet/) n'utilitzen aquesta, com per exemple, MasOrange, Digi, Movistar o O2.
