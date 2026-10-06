@@ -6,8 +6,10 @@ una xarxa publica diferent, ja que té una forma de xarxa llogica d'aquesta mane
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+    node1-->ROUTER1;
+    node2-->ROUTER1;
+    node3-->ROUTER2;
+    node4-->ROUTER2;
+    ROUTER1-->CG-NAT;
+    ROUTER2-->CG-NAT;
 ``` 
