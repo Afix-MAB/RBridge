@@ -12,4 +12,5 @@ graph TD;
     node4-->ROUTER2;
     ROUTER1-->CG-NAT;
     ROUTER2-->CG-NAT;
+    CG-NAT-->INTERNET;
 ``` 
