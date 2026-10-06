@@ -6,12 +6,12 @@ una xarxa publica diferent, ja que té una forma de xarxa llogica d'aquesta mane
 
 ```mermaid
 graph TD;
-    node1-->ROUTER1;
-    node2-->ROUTER1;
-    node3-->ROUTER2;
-    node4-->ROUTER2;
-    ROUTER1||-->CG-NAT;
-    ROUTER2||-->CG-NAT;
+    node1|10.162.114.201|-->ROUTER1;
+    node2|10.162.114.202|-->ROUTER1;
+    node3|10.162.114.201|-->ROUTER2;
+    node4|10.162.114.202|-->ROUTER2;
+    ROUTER1|20.40.20.1|-->CG-NAT;
+    ROUTER2|20.40.20.2|-->CG-NAT;
     CG-NAT-->|PUBLIC IP| INTERNET;
 ```
  
