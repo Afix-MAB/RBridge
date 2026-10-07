@@ -16,3 +16,5 @@ graph TD;
     ROUTER2-->|PRIVATE IP|CG-NAT;
     CG-NAT-->|PUBLIC IP|INTERNET;
 ```
+### Abast del projecte
+Es tindra en compte en la creació del projecte els agents, exte

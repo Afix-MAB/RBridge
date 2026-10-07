@@ -1,9 +1,9 @@
-# RemoteBridge - Plataforma d'accés remot
+# RBridge - Plataforma d'accés remot
 ![Linux](https://img.shields.io/badge/SO-Linux-FCC624?logo=linux&logoColor=black)
 ![WireGuard](https://img.shields.io/badge/VPN-WireGuard-88171A?logo=wireguard&logoColor=white)
 ## Idea de servei
 
-RemoteBridge serà un servei de control remot per a xarxes que funcionen amb [CG-NAT](https://www.xataka.com/basics/cg-nat-que-que-problemas-puede-provocar-como-saber-tienes-tu-conexion-a-internet), on una IP pública és compartida per més d'un router privat per usuari, és a dir, és un NAT en diferents xarxes privades, compartint així una mateixa IP pública.
+RBridge serà un servei de control remot per a xarxes que funcionen amb [CG-NAT](https://www.xataka.com/basics/cg-nat-que-que-problemas-puede-provocar-como-saber-tienes-tu-conexion-a-internet), on una IP pública és compartida per més d'un router privat per usuari, és a dir, és un NAT en diferents xarxes privades, compartint així una mateixa IP pública.
 
 El servei està pensat per poder tenir un accés remot segur per a un tècnic informàtic, que dona servei a petits negocis que tinguin una IP pública compartida. Es pensa tenir un servidor cloud (VPS), que fa de punt de connexió, i una passarel·la a casa del client. S'utilitzarà [WireGuard](https://www.wireguard.com/) per a la connexió.
 
