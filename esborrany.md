@@ -17,4 +17,4 @@ graph TD;
     CG-NAT-->|PUBLIC IP|INTERNET;
 ```
 ### Abast del projecte
-Es tindra en compte en la creació del projecte els agents, exte
+Es tindra en compte en la creació del projecte, els usuaris que neccesiten el servei de monitoratge (els clients), la forma de la xarxa de forma llogica, s'intentara possar en practica, el servidor privat en xarxa per poder establir la xarxa, els dispositius raspberry per  
