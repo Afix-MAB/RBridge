@@ -17,29 +17,21 @@ graph TD;
     CG-NAT-->|PUBLIC IP|INTERNET;
 ```
 
-```mermaid
-flowchart LR
-    subgraph LAN["LAN del client · 192.168.1.0/24"]
-        PC1[PC 192.168.1.20]
-        PC2[PC 192.168.1.30]
-        R[Router 192.168.1.1]
-        PC1 --> R
-        PC2 --> R
-    end
-
-    subgraph CG["CG-NAT del operador · 100.64.0.0/10"]
-        CGN[CG-NAT 100.64.0.1]
-    end
-
-    HUB[Hub VPS<br/>IP Publica]
-
-    R -->|"100.64.0.2"| CGN
-    CGN -->|"Internet"| HUB
-```
 ### Abast del projecte
 Es tindra en compte en la creació del projecte, els usuaris que neccesiten el servei de monitoratge (els clients), la forma de la xarxa de forma llogica, s'intentara possar en practica, el servidor privat en xarxa per poder establir la xarxa, els dispositius raspberry per  
 
 
 ### Diagrama de Projecte
 
+```mermaid
+flowchart LR
+    T[Técnico] -->|túnel| H[Hub VPS]
+    H -->|túnel| P[Pasarela cliente]
+    P --> PC[PC del cliente]
 
+    H --> Portal[Portal web]
+    H --> DB[(Base de datos)]
+    H --> FW[Firewall]
+
+    Pub[Web pública] --> DB
+```
