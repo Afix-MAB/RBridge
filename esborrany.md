@@ -51,9 +51,9 @@ flowchart LR
     H -->|túnel| P[Pasarela client]
     P --> PC[PC del cliente]
 
-    H --> Portal[Portal web]
-    H --> DB[(Base de datos)]
-    H --> FW[Firewall]
+    VPS --> Portal[Portal web]
+    VPS --> DB[(Base de datos)]
+    VPS --> FW[Firewall]
 
     WPub[Web pública] --> DB
 ```
