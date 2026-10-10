@@ -47,8 +47,8 @@ Els agents en el projecte son els següents:
 
 ```mermaid
 flowchart LR
-    T[Técnico] -->|túnel| V[VPS]
-    H -->|túnel| P[Pasarela client]
+    T[Técnico] -->|Bridge| V[VPS]
+    VPS -->|Bridge| P[Pasarela client]
     P --> PC[PC del cliente]
 
     VPS --> Portal[Portal web]
