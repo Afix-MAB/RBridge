@@ -52,8 +52,8 @@ flowchart LR
     P --> PC[PC del cliente]
 
     VPS --> Portal[Portal web]
-    VPS --> DB[(Base de datos)]
+    VPS --> DB[(BD)]
     VPS --> FW[Firewall]
 
-    WPub[Web pública] --> DB
+    WPub[Web] --> DB
 ```
