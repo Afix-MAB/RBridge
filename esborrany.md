@@ -1,10 +1,15 @@
 # Esborrany sobre el Projecte
+
 ### Context del projecte
-Es creara una eina per poder fer monitoratge d'equips que estiguin debaix de un CG-NAT, es resoldra el problema de que els CG-NAT
-no tenen cap manera tradicional per poder tenir ports oberts per a serveis o shells disponibles en xarxa que siguin disponibles desde 
-una xarxa publica diferent, ja que té una forma de xarxa llogica d'aquesta manera.
+
+Es crearà una eina per poder fer monitoratge d'equips que estiguin sota d'un CG-NAT, es resoldrà el problema de què els CG-NAT
+
+no tenen cap manera tradicional per poder tenir ports oberts per a serveis o shells disponibles en xarxa que siguin disponibles des de 
+
+Una xarxa pública diferent, ja que té una forma de xarxa lògica d'aquesta manera.
 
 ```mermaid
+
 graph TD;
     node1-->|10.162.114.201|ROUTER1;
     node2-->|10.162.114.202|ROUTER1;
@@ -18,44 +23,58 @@ graph TD;
 ```
 
 ### Abast del projecte
-Es tindra en compte en la creació del projecte, els usuaris que neccesiten el servei de monitoratge (els clients), la forma de la xarxa de forma llogica, s'intentara possar en practica, el servidor privat en xarxa per poder establir la xarxa, els dispositius raspberry per inizialitzar la conexió.
 
+Es tindrà en compte en la creació del projecte, els usuaris que necessiten el servei de monitoratge (els clients), la forma de la xarxa de forma lògica, s'intentarà posar en practica, el servidor privat en xarxa per poder establir la xarxa, els dispositius Raspberry per inicialitzar la connexió.
 
 ### Diagrama de Projecte
 
-Els agents en el projecte son els següents: 
+Els agents en el projecte són els següents: 
 
 1. Xarxa
- * Técnic - Amb el seu portatil es podrá connectar en el VPS. 
- * WireGuard pel admin - És el tunel del tecnic fins al VPS. 
- * WireGuard pel client - És el tunel que tindra cada client. 
- * FireWall -  Per tindre un minim de seguretat en la connexió, per només permetre la connexió a autoritzats.
- * Pasarela - Será la Raspberry en casa del client.
- * PC del client - On rebra l'accés.
- * VPS -  El servidor privat que tindrem, on resideix, WireGuard (els tunels), firewall, la base de dades, el reconciliador de peticions de la web amb la bdd, i possiblement la monitorització de connexions, memories...
- > S'utilitzara el VPS de forma simulada, també hauria d'estar el portal web per les peticions del reconciliador per la base de dades, es simulara tota l'estructura funcional pero no per llimitacions de hardware.
+
+ * Tècnic - Amb el seu portàtil es podrà connectar en el VPS. 
+
+ * WireGuard pel admin - És el túnel del tècnic fins al VPS. 
+
+ * WireGuard pel client - És el túnel que tindrà cada client. 
+
+ * FireWall - Per tindre un mínim de seguretat en la connexió, per només permetre la connexió a autoritzats.
+
+ * Passarel·la - Serà la Raspberry en casa del client.
+
+ * PC del client - On rebrà l'accés.
+
+ * VPS -  El servidor privat que tindrem, on resideix, WireGuard (els túnels), firewall, la base de dades, el reconciliador de peticions de la web amb la bdd, i possiblement el monitoratge de connexions, memòries...
+
+ > S'utilitzarà el VPS de forma simulada, també hauria de simular el portail web per les peticions del reconciliador per la base de dades.
 
 2. Gestió
- * Portal web - On el tecnic demana les sessions.
+
+ * Portal web - On el tècnic demana les sessions.
+
  * Base de dades - On es guarden els clients, sessions...
- * Reconciliador - Compara el que te la bdd amb el que tenim possat.
- > S'esta pensat utilitzar python de forma molt bàsica per crear el reconciliador.
- * Monitorització - Avisa si algun node falla.
+
+ * Reconciliador - Compara el que té la bdd amb el que tenim posat.
+
+ > S'està pensat utilitzar Python de forma molt bàsica per crear el reconciliador.
+
+ * Monitoratge - Avisa si algun node falla.
 
 3. Serveis
- * Web publica - Presenta el servei del tecnic.
+
+ * Web pública - Presenta el servei del tècnic.
 
 4. Simulació
- * Proxmox será el hipervisor que utilitzaré per crear xarxes internes, els hosts, els routers, ja que es molt més avançat que VirtualBox. 
+
+ * Proxmox serà l'hipervisor que usaré per crear xarxes internes, els hosts, els routers, ja que és molt més avançat que VirtualBox, i té moltes més funcionalitats que ens permetran simular-ho. 
+
 ```mermaid
 flowchart LR
-    T[Técnico] -->|Bridge| V[VPS]
+    T[Técnic] -->|Bridge| V[VPS]
     VPS -->|Bridge| P[Pasarela client]
-    P --> PC[PC del cliente]
-
+    P --> PC[PC client]
     VPS --> Portal[Portal web]
     VPS --> DB[(BD)]
     VPS --> FW[Firewall]
-
     WPub[Web] --> DB
-```
+´´´
