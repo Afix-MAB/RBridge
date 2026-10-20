@@ -69,7 +69,8 @@ Els agents en el projecte són els següents:
  * Proxmox serà l'hipervisor que usaré per crear xarxes internes, els hosts, els routers, ja que és molt més avançat que VirtualBox, i té moltes més funcionalitats que ens permetran simular-ho. 
 
 ```mermaid
-flowchart LR
+
+flowchart LR;
     T[Técnic] -->|Bridge| V[VPS]
     VPS -->|Bridge| P[Pasarela client]
     P --> PC[PC client]
@@ -77,4 +78,4 @@ flowchart LR
     VPS --> DB[(BD)]
     VPS --> FW[Firewall]
     WPub[Web] --> DB
-´´´
+``` 
