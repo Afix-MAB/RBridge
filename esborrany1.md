@@ -90,7 +90,7 @@ flowchart LR
 
     VPS --> Portal[Portal web]
 
-    VPS --> DB[(BDD)]
+    VPS --> DB[(BD)]
 
     VPS --> FW[Firewall]
 
