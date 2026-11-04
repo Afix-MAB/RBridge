@@ -1,6 +1,9 @@
 # RBridge - Plataforma d'accés remot
 ![Linux](https://img.shields.io/badge/SO-Linux-FCC624?logo=linux&logoColor=black)
 ![WireGuard](https://img.shields.io/badge/VPN-WireGuard-88171A?logo=wireguard&logoColor=white)
+![VPS](https://img.shields.io/badge/VPS-Servidor-00599C?logo=linux&logoColor=white)
+![XARXA](https://img.shields.io/badge/XARXA-Red-2E8B57?logo=wireguard&logoColor=white)
+![Proxmox](https://img.shields.io/badge/Proxmox-VE-E57000?logo=proxmox&logoColor=white)
 ## Idea de servei
 
 RBridge serà un servei de control remot per a xarxes que funcionen amb [CG-NAT](https://www.xataka.com/basics/cg-nat-que-que-problemas-puede-provocar-como-saber-tienes-tu-conexion-a-internet), on una IP pública és compartida per més d'un router privat per usuari, és a dir, és un NAT en diferents xarxes privades, compartint així una mateixa IP pública.
