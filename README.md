@@ -10,7 +10,6 @@ El servei està pensat per poder tenir un accés remot segur per a un tècnic in
 El tècnic podrà accedir al dispositiu des d'una web, sense que el client hagi d'obrir ports o configurar qualsevol protocol. Cada usuari tindrà una Raspberry Pi per poder tenir aquesta connexió.
 
 Es podrà accedir directament al hardware gràcies al servei, possiblement es possará en práctica.
-
 ## Problemes
 
 Hi ha la possibilitat que un grup d'empreses en un edifici estiguin darrere d'una CG-NAT, ja que alguns [operadors](https://www.redeszone.net/tutoriales/redes-cable/operadores-usan-cg-nat-internet/) n'utilitzen aquesta, com per exemple, MasOrange, Digi, Movistar o O2.
@@ -23,4 +22,4 @@ Dissenyar i desplegar un sistema que ens deixi accedir de forma segura a les xar
 
 ## Contingut
 
-El projecte incorpora un VPS, 3 clients, 3 dispositius Raspberry, i un portal web amb un formulari de seleccions. També hi haurà una web per poder demanar els serveis del tècnic i una base de dades dels dispositius dels clients.
+El projecte incorpora un VPS, clients, dispositius Raspberry, i un portal web amb un formulari de seleccions. També hi haurà una web per poder demanar els serveis del tècnic i una base de dades dels dispositius dels clients.
